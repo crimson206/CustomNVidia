@@ -12,7 +12,7 @@ import os
 import warnings
 import numpy as np
 import torch
-import dnnlib
+from custom_nvidia.stylegan2_ada import dnnlib
 import traceback
 
 from .. import custom_ops
