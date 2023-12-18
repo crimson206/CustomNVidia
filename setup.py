@@ -5,8 +5,8 @@ setup(
     version="0.1.0",
     description="Custom NVidia Modules",
     author="Sisung Kim",
-    package_dir={"": "stylegan2-ada"},
-    packages=find_packages(where="stylegan2-ada"),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     install_requires=[
         "numpy",
         "torch",
