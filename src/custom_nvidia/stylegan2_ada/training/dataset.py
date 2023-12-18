@@ -12,7 +12,7 @@ import zipfile
 import PIL.Image
 import json
 import torch
-import dnnlib
+import custom_nvidia.stylegan2_ada.dnnlib
 
 try:
     import pyspng

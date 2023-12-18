@@ -10,11 +10,11 @@
 
 import torch
 
-from .. import misc
-from . import conv2d_gradfix
-from . import upfirdn2d
-from .upfirdn2d import _parse_padding
-from .upfirdn2d import _get_filter_size
+from custom_nvidia.stylegan2_ada.torch_utils import misc
+from custom_nvidia.stylegan2_ada.torch_utils.ops import conv2d_gradfix
+from custom_nvidia.stylegan2_ada.torch_utils.ops import upfirdn2d
+from custom_nvidia.stylegan2_ada.torch_utils.ops.upfirdn2d import _parse_padding
+from custom_nvidia.stylegan2_ada.torch_utils.ops.upfirdn2d import _get_filter_size
 
 #----------------------------------------------------------------------------
 

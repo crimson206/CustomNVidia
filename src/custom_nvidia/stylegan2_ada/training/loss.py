@@ -8,9 +8,9 @@
 
 import numpy as np
 import torch
-from torch_utils import training_stats
-from torch_utils import misc
-from torch_utils.ops import conv2d_gradfix
+from custom_nvidia.stylegan2_ada.torch_utils import training_stats
+from custom_nvidia.stylegan2_ada.torch_utils import misc
+from custom_nvidia.stylegan2_ada.torch_utils.ops import conv2d_gradfix
 
 #----------------------------------------------------------------------------
 

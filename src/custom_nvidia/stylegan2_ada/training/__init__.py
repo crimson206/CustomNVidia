@@ -8,4 +8,5 @@
 
 # empty
 
+import custom_nvidia.stylegan2_ada.torch_utils as torch_utils
 from custom_nvidia.stylegan2_ada import torch_utils
