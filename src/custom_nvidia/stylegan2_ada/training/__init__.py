@@ -7,3 +7,5 @@
 # license agreement from NVIDIA CORPORATION is strictly prohibited.
 
 # empty
+
+from custom_nvidia.stylegan2_ada import torch_utils
