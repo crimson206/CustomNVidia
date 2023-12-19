@@ -456,6 +456,7 @@ class SynthesisNetwork(torch.nn.Module):
 
     def forward(self, ws, **block_kwargs):
         block_ws = []
+        images = []
         with torch.autograd.profiler.record_function('split_ws'):
             misc.assert_shape(ws, [None, self.num_ws, self.w_dim])
             ws = ws.to(torch.float32)
@@ -468,7 +469,11 @@ class SynthesisNetwork(torch.nn.Module):
         x = img = None
         for res, cur_ws in zip(self.block_resolutions, block_ws):
             block = getattr(self, f'b{res}')
-            x, img = block(x, img, cur_ws, **block_kwargs)
+            x, img = block(x, img, cur_ws, **block_kwargs) 
+
+            images.append(img)
+
+        self.images = images
         return img
 
 #----------------------------------------------------------------------------
