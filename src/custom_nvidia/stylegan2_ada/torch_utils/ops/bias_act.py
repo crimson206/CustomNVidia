@@ -39,6 +39,10 @@ _plugin = None
 _null_tensor = torch.empty([0])
 
 def _init():
+    ### plugin is turned off
+    return False
+
+def _init_ori():
     global _inited, _plugin
     if not _inited:
         _inited = True

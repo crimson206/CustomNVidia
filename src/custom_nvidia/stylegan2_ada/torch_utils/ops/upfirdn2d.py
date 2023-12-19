@@ -23,6 +23,10 @@ _inited = False
 _plugin = None
 
 def _init():
+    ### plugin is turned off
+    return False
+
+def _init_ori():
     global _inited, _plugin
     if not _inited:
         sources = ['upfirdn2d.cpp', 'upfirdn2d.cu']
