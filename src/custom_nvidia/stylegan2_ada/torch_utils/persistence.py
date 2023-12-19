@@ -20,7 +20,7 @@ import inspect
 import copy
 import uuid
 import types
-import custom_nvidia.stylegan2_ada.dnnlib
+import custom_nvidia.stylegan2_ada.dnnlib as dnnlib
 
 #----------------------------------------------------------------------------
 

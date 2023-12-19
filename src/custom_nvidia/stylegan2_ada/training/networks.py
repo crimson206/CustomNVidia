@@ -484,6 +484,14 @@ class Generator(torch.nn.Module):
         mapping_kwargs      = {},   # Arguments for MappingNetwork.
         synthesis_kwargs    = {},   # Arguments for SynthesisNetwork.
     ):
+        '''
+        c_dim => w_dim by embedding
+        by mapping,
+        [z_dim + w_dim] + [w_dim] * num_layers 
+        by default.
+
+        for more detail, refer to mapping network
+        '''
         super().__init__()
         self.z_dim = z_dim
         self.c_dim = c_dim

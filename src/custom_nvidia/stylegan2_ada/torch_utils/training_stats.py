@@ -14,9 +14,8 @@ code."""
 import re
 import numpy as np
 import torch
-import custom_nvidia.stylegan2_ada.dnnlib
-
-from . import misc
+import custom_nvidia.stylegan2_ada.dnnlib as dnnlib
+from custom_nvidia.stylegan2_ada.torch_utils import misc
 
 #----------------------------------------------------------------------------
 

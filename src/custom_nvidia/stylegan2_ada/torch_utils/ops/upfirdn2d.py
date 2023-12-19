@@ -14,9 +14,8 @@ import numpy as np
 import torch
 import traceback
 
-from .. import custom_ops
-from .. import misc
-from . import conv2d_gradfix
+from custom_nvidia.stylegan2_ada.torch_utils import misc, custom_ops
+from custom_nvidia.stylegan2_ada.torch_utils.ops import conv2d_gradfix
 
 #----------------------------------------------------------------------------
 
